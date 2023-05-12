@@ -25,7 +25,7 @@ s3_upload() {
 
 
 push_tag() {
-    IFS=',' read -ra fields <<< ${1}
+    IFS=',' read -ra fields <<< "${1}"
     local service_name=${fields[0]}
     local tag=${fields[1]}
 
